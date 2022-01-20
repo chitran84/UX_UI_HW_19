@@ -1,0 +1,161 @@
+/* Navigation CSS */
+.nav {
+    display: flex;
+    background-color: none; 
+    height: 72px;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    
+    }
+    
+    
+    .name {
+        box-sizing: border-box;
+        margin: 2rem;
+        padding: 0;
+        font-size: 40px;
+        color: black;
+        text-align: center;
+    }
+    #rightNav p {
+        display: inline-flex;
+        font-size:20px;
+            
+    }
+    
+    .menu-item {
+        box-sizing: border-box;
+        margin: 50px;
+        cursor: pointer;
+        color: black;
+        text-align: center;
+        justify-content: center;
+    }
+    /* Column CSS */
+    
+    .topCon{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .containerCon {
+    display: grid;
+    height: auto;
+    font-family: 'Roboto Slab', serif;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: 
+    "mailOn mailOn"
+    "linkOn linkOn" 
+    "resumeOn resumeOn"
+    
+    ;
+    }
+
+    
+    .mailOn{
+        grid-area: mailOn ;
+        box-sizing: border-box;
+        background-image: url("../img/outlook.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 5rem;
+        margin-right: 20rem;
+        margin-left: 20rem;
+        margin-bottom: 5rem;
+        padding: 2rem;
+
+    }
+    .linkOn {
+        grid-area: linkOn ;
+     box-sizing: border-box;
+        background-image: url("../img/Linkedin.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 5rem;
+        margin-right: 20rem;
+        margin-left: 20rem;
+        margin-bottom: 5rem;
+        padding: 2rem;
+        
+    }
+    
+    .resumeOn {
+        grid-area: resumeOn ;
+        box-sizing: border-box;
+        background-image: url("../img/word.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 5rem;
+        margin-right: 20rem;
+        margin-left: 20rem;
+        margin-bottom: 5rem;
+        padding: 2rem;
+        
+    }
+    
+    #text{
+        background: rgba(28, 36, 44, 0.2);
+        color: white;
+        font-size: 20px;
+        margin-top: 250px;
+        padding: 15px;
+        cursor: pointer;
+        font-family: 'Roboto Slab', serif;
+        
+    }
+
+
+    /* Footer CSS */
+    .footer{
+        display: flex;
+        background-color: rgba(145, 35, 35, 0.1);
+        font-size: 40px;
+        justify-content:space-between;
+        align-items: baseline;
+    
+    
+    }
+    .contact {
+        cursor:pointer;
+    }
+    img {
+        cursor:pointer;
+    }
+    @media only screen and (max-width: 600px) {
+        /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+        .nav{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+       #rightNav{
+           display: flex;
+           justify-content: center;
+           text-align: center;
+       }
+            
+    
+        .name {
+            text-align: center;
+            font-size: 3rem;
+        
+        }
+    
+        .menu-item{
+            display: flex;
+            text-align: center;
+            
+        }
+        .containerCon{
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    
+    }

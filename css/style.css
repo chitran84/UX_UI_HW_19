@@ -1,0 +1,210 @@
+/* Navigation CSS */
+.nav {
+display: flex;
+height: 72px;
+justify-content: space-between;
+padding: 10px;
+font-family: 'Roboto Slab', serif;
+}
+
+.name {
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 0;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+#rightNav p {
+    display: inline-flex;
+    font-size:20px;       
+}
+
+.menu-item {
+    box-sizing: border-box;
+    margin: 50px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+    
+
+/* Column CSS */
+
+.introme{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    display: grid;
+    height: auto;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "container container"
+    "heromg heromg"
+    "textaboutpara textaboutpara"
+    "preproject preproject"
+    "app app"
+    "roundies roundies"
+    
+}
+
+.heromg{
+    grid-area: heromg;
+    box-sizing: border-box;
+    margin-left: 30rem;
+    
+}
+.roundies{
+    grid-area: heromg;
+    box-sizing: border-box;
+    margin-top: 35.5rem;
+    margin-left: 50rem;
+    
+}
+
+.textaboutpara{
+    grid-area: textaboutpara;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+/* Middle CSS */
+.preproject{
+    grid-area: preproject;
+    box-sizing: border-box;
+    margin-top: 4rem;
+    margin-left: 35rem;
+    margin-right: 35rem;
+}
+.app{
+    grid-area: app;
+    box-sizing: border-box;
+    border: solid black;
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    
+}
+
+
+
+/* Footer CSS */
+.footer{
+    display: flex;
+    background-color: rgba(87, 114, 97, 0.1);
+    font-size: 40px;
+    justify-content:space-between;
+    align-items: baseline;
+    font-family: 'Roboto Slab', serif;
+
+
+}
+#rightBC {
+    cursor:pointer;
+    color: black;
+    margin-right: 30px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+#leftBC {
+    margin-left: 30px;
+}
+img {
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+    .nav{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+   #rightNav{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+   }
+        
+  
+    .name {
+        text-align: center;
+        font-size: 3rem;
+    
+    }
+
+    .menu-item{
+        display: flex;
+    }
+    
+    .introme{
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .container {
+        display: grid;
+        height: auto;
+        font-family: 'Roboto Slab', serif;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "container container"
+        "heromg heromg"
+        "textaboutpara textaboutpara"
+        "preproject preproject"
+        "app app"
+        
+    }
+    
+    .heromg{
+        grid-area: heromg;
+        box-sizing: border-box;
+        margin-right: 60rem;
+        
+        
+    }
+    .textaboutpara{
+        grid-area: textaboutpara;
+        box-sizing: border-box;
+        margin-top: 5rem;
+        text-align: center;
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+    
+    .preproject{
+        grid-area: preproject;
+        box-sizing: border-box;
+        margin-top: 4rem;
+        margin-left: 35rem;
+        margin-right: 35rem;
+    }
+    .app{
+        grid-area: app;
+        box-sizing: border-box;
+        border: solid black;
+        text-align: center;
+        padding: 3rem;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        
+    }
+}

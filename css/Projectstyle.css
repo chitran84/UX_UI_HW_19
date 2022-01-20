@@ -1,0 +1,211 @@
+/* Navigation CSS */
+.nav {
+    display: flex;
+    background-color: none; 
+    height: 72px;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    
+    }
+    
+    
+    .name {
+        box-sizing: border-box;
+        margin: 2rem;
+        padding: 0;
+        font-size: 40px;
+        color: black;
+        text-align: center;
+    }
+    #rightNav p {
+        display: inline-flex;
+        font-size:20px;
+            
+    }
+    
+    .menu-item {
+        box-sizing: border-box;
+        margin: 50px;
+        cursor: pointer;
+        color: black;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* Column CSS */
+    .project{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+        height: 10rem;
+    }
+    
+    .containerBox{
+        display: grid;
+        height: auto;
+        font-family: 'Roboto Slab', serif;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "lefttravel firstline"
+        "leftZen secondline"
+        "theBig thirdline"
+
+    }
+
+
+    #lefttravel{
+        grid-area: lefttravel;
+        box-sizing: border-box; 
+        margin-left: 15rem;
+        padding-bottom: 10rem;
+    }
+
+    .firstline {
+        grid-area: firstline;
+        box-sizing: border-box;
+        font-size: 30px;
+        margin-right: 10rem;
+        cursor: pointer;
+    }
+
+
+    #leftZen {
+        grid-area: leftZen;
+        box-sizing: border-box; 
+        margin-left: 15rem;
+        padding-bottom: 10rem;
+       
+    
+    }
+
+    .secondline{
+        grid-area: secondline;
+        box-sizing: border-box;
+        font-size: 30px;
+        margin-right: 10rem;
+        cursor: pointer;
+    }
+ 
+    
+    #theBig {
+        grid-area: theBig;
+        box-sizing: border-box; 
+        margin-left: 15rem;
+        padding-bottom: 10rem;
+    }
+    .thirdline{
+        grid-area: thirdline;
+        box-sizing: border-box;
+        font-size: 30px;
+        margin-right: 10rem;
+        cursor: pointer;
+    }
+   
+    /* Footer CSS */
+    .footer{
+        display: flex;
+        background-color: rgba(88, 145, 35, 0.788);
+        font-size: 40px;
+        justify-content:space-between;
+        align-items: baseline;
+        font-family: 'Roboto Slab', serif;
+    
+    }
+    .contact {
+        cursor:pointer;
+    }
+    img {
+        cursor:pointer;
+    }
+    @media only screen and (max-width: 600px) {
+        /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+        .nav{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+       #rightNav{
+           display: flex;
+           justify-content: center;
+           text-align: center;
+       }
+            
+    
+        .name {
+            text-align: center;
+            font-size: 3rem;
+        
+        }
+    
+        .containerBox{
+            display: grid;
+            height: auto;
+            justify-content: center;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr ;
+            grid-template-areas: 
+            "lefttravel"
+            "firstline"
+            "leftZen" 
+            "secondline"
+            "theBig" 
+            "thirdline"
+    
+        }
+    
+    
+        #lefttravel{
+            grid-area: lefttravel;
+            box-sizing: border-box; 
+            margin-right: 9rem;
+        }
+    
+        .firstline {
+            grid-area: firstline;
+            box-sizing: border-box;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 10rem;
+            margin-left: 10rem;    
+        }
+    
+    
+        #leftZen {
+            grid-area: leftZen;
+            box-sizing: border-box; 
+            box-sizing: border-box; 
+            margin-right: 9rem;
+           
+        
+        }
+    
+        .secondline{
+            grid-area: secondline;
+            box-sizing: border-box;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 10rem;
+            margin-left: 10rem;    
+        }
+     
+        
+        #theBig {
+            grid-area: theBig;
+            box-sizing: border-box; 
+            box-sizing: border-box; 
+            margin-right: 9rem;
+        }
+        .thirdline{
+            grid-area: thirdline;
+            box-sizing: border-box;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            margin-left: 10rem;    
+        }
+    }
+
