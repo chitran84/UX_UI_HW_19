@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>CG_profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/Aboutstyle.css">
     <link rel="icon" type="image/x-icon" href="/img/Favicol.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,23 +11,15 @@
 </head>
 <body>
 <!-- Nav HTML -->
-            <div class="nav">
-                <a style="text-decoration:none"   href='./index.html'>
-                <div class="name"> Chitran Graham</div>
-                </a>
-                <div id="rightNav"> 
-                    <a style="text-decoration:none"   href='./About.html'>
-                        <p class="menu-item"> About</p>
-                    </a>
-                    <a style="text-decoration:none"   href="./Project.html">
-                    <p class="menu-item"> Projects</p>
-                    </a>
-                    <a style="text-decoration:none"   href="./Connect.Html">
-                    <p class="menu-item"> Connect</p>
-                    </a>     
-                </div>
-            
-            </div>
+
+<div id="topSec">
+    <ul class="navBar">
+        <li class="hover-underline-animation" style="float:right"><a class="active" href="Connect.Html">Contact</a></li>
+        <li class="hover-underline-animation" style="float:right"><a class="active" href="Project.html">Projects</a></li>
+        <li class="hover-underline-animation" style="float:right"><a class="active" href="About.html">MyStory</a></li>
+        <li style="float:left" id="chitranLogo"><a class="active" href="index.html"> <img srcset="img/Favicol.png" height="100" ></a></li>
+    </ul>
+</div>
                    
             
 <!-- Column Layout -->
@@ -61,15 +54,11 @@
 <!-- Footer HTML -->
 <Footer>
     <div class="footer">
-    <p>2022</p>
-    <a style="text-decoration:none"   href='./index.html'>
-        <img srcset="img/Favicol.png" height="100" width="">
-       </a>
+        <p id="leftBC">2022</p>
                 
-            <div class="contact">
-                <p>Contact</p> 
-            </div>
-    </div>
+            <a style="text-decoration: none;" href="./Connect.Html">
+             <p id="rightBC" class="underline-hover"> Contact</p>
+             </a>
         
     </div>
 </Footer>

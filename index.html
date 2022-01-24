@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>CG_profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/Favicol.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,42 +11,44 @@
 </head>
 <body>
 <!-- Nav HTML -->
-            <div class="nav">
-                <a style="text-decoration:none"   href='./index.html'>
-                    <div class="name"> Chitran Graham</div>
-                    </a>
-                <div id="rightNav"> 
-                    <a style="text-decoration:none"   href='./About.html'>
-                        <p class="menu-item"> About</p>
-                    </a>
-                    <a style="text-decoration:none"   href="./Project.html">
-                    <p class="menu-item"> Projects</p>
-                    </a>
-                    <a style="text-decoration:none"   href="./Connect.Html">
-                    <p class="menu-item"> Connect</p>
-                    </a>     
-                </div>
-            
-            </div>
+<div id="topSec">
+    <ul class="navBar">
+        <li class="hover-underline-animation" style="float:right"><a class="active" href="Connect.Html">Contact</a></li>
+        <li class="hover-underline-animation" style="float:right"><a class="active" href="Project.html">Projects</a></li>
+        <li class="hover-underline-animation" style="float:right"><a class="active" href="About.html">MyStory</a></li>
+        <li style="float:left" id="chitranLogo"><a class="active" href="index.html"> <img srcset="img/Favicol.png" height="100" ></a></li>
+    </ul>
+</div>
+
+
+
                    
             
 <!-- Column Layout -->
-<p class="introme"> Hey I'm Chitran Graham</p>
+
+
+
+
+
+
     <div class="container">
+        <p class="introme"> Heyya!!! I'm Chitran Graham</p>
             <div class="heromg">
-                    <img src="img/IMG_CG.png" height="600" width="500">
-            </div>
+                    <img src="img/IMG_CG.png" height="600" width="500"></div>
+            <div class="roundies">
+                    <img class="spinMe" src="./img/Carousel round.png" height="250" width="250"></div>
+    </div>
+
             <div class="textaboutpara">
             <p>I am a UX/UI Designer and Front End Developer.  I'm based in the most livable city in the world Melbourne, Victoria. Currently I'm working as an IT/UX/UI/FED in Austbrush.</p>
             <br>
             <p>I deliver the best  outcome for my internal and external clients with high quality technical support and visual design. </p>
             </div>
-            <div class="roundies">
-                <img src="./img/Carousel round.png" height="250" width="250">
-            </div>
+   
+            
 <!-- Middle Layout -->
-            <div class="preproject"> 
-        <a style="text-decoration:none"   href="./Project.html">
+         <div class="preproject"> 
+            <a style="text-decoration:none"   href="./Project.html">
             <p class="app"> Travel Bubble</p>
             <br>
             <p class="app"> Zentient</p>
@@ -53,20 +56,15 @@
             <p class="app"> The Big Umbrella </p>
             </a>
         </div>
-    </div>
 
 <!-- Footer HTML -->
 <Footer>
     <div class="footer">
-    <p id="leftBC">2022</p>
-    <img srcset="img/Favicol.png" height="100" width="">
+        <p id="leftBC">2022</p>
                 
             <a style="text-decoration: none;" href="./Connect.Html">
-             <p id="rightBC"> Connect</p>
+             <p id="rightBC" class="underline-hover"> Contact</p>
              </a>
-             
-            
-    </div>
         
     </div>
 </Footer>

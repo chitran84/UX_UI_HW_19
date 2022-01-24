@@ -1,80 +1,128 @@
-/* Navigation CSS */
-.nav {
-display: flex;
-height: 72px;
-justify-content: space-between;
-padding: 10px;
-font-family: 'Roboto Slab', serif;
+#topSec{
+    height: 72px;
+    position: relative;
 }
-
-.name {
+.navBar{
+    display: block;
+    text-align:center;
     box-sizing: border-box;
-    margin: 2rem;
-    padding: 0;
-    font-size: 40px;
+    color:black;
+    margin-top: 2rem;
+    list-style-type: none;
+}
+li > a{
+    text-decoration: none;
     color: black;
-    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin-right: 5rem;
+    font-size: 1rem;
 }
-#rightNav p {
-    display: inline-flex;
-    font-size:20px;       
-}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(0,0,255);
+  }
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 3.7rem;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0,0,255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
-.menu-item {
-    box-sizing: border-box;
-    margin: 50px;
-    color: black;
-    text-align: center;
-    justify-content: center;
-}
-
-    
 
 /* Column CSS */
 
 .introme{
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-left: 30rem;
     text-align: center;
     font-size: 40px;
     font-family: 'Roboto Slab', serif;
+    position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+    color: white;
+
+}
+
+
+.introme:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 37px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -18.5px;
+	margin-left: -37px;
 }
 
 .container {
     display: grid;
     height: auto;
+    margin: auto;
     justify-content: center;
     font-family: 'Roboto Slab', serif;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "container container"
     "heromg heromg"
+    "roundies roundies"
     "textaboutpara textaboutpara"
     "preproject preproject"
     "app app"
-    "roundies roundies"
+    
     
 }
 
 .heromg{
     grid-area: heromg;
     box-sizing: border-box;
-    margin-left: 30rem;
+    margin-right: 60rem;
+    position: absolute;
+    background-repeat: no-repeat;
+
     
 }
 .roundies{
     grid-area: heromg;
     box-sizing: border-box;
-    margin-top: 35.5rem;
-    margin-left: 50rem;
-    
+    margin-left: 19rem;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin-top: 10rem;
 }
 
+.spinMe {
+    animation: spin 5s infinite linear;
+  }
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 .textaboutpara{
     grid-area: textaboutpara;
     box-sizing: border-box;
     font-size: 2rem;
-    margin-top: 5rem;
     text-align: center;
 }
 
@@ -94,7 +142,7 @@ font-family: 'Roboto Slab', serif;
     text-align: center;
     padding: 3rem;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     
 }
 
@@ -102,17 +150,16 @@ font-family: 'Roboto Slab', serif;
 
 /* Footer CSS */
 .footer{
+    box-sizing: border-box;
     display: flex;
     background-color: rgba(87, 114, 97, 0.1);
-    font-size: 40px;
+    font-size: 20px;
     justify-content:space-between;
-    align-items: baseline;
     font-family: 'Roboto Slab', serif;
 
 
 }
 #rightBC {
-    cursor:pointer;
     color: black;
     margin-right: 30px;
     text-decoration: none;
@@ -122,38 +169,57 @@ font-family: 'Roboto Slab', serif;
     
 }
 #leftBC {
-    margin-left: 30px;
+        margin-left: 30px;
 }
-img {
-    cursor:pointer;
+.underline-hover {
+  display: inline-block;
+  position: relative;
+  color: rgb(0,0,255);
 }
+.underline-hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline-hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 @media only screen and (max-width: 600px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
-    .nav{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
+    #topSec{
+        height: 100px;
+        position: relative;
     }
-   #rightNav{
-       display: flex;
-       justify-content: center;
-       text-align: center;
-   }
-        
-  
-    .name {
-        text-align: center;
-        font-size: 3rem;
-    
+    .navBar{
+        display:block;
+        margin-right: 1rem;
+        box-sizing: border-box;
+        color:black;
+        list-style-type: none;
     }
+    li > a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1rem;
+    }
+    #chitranLogo{
+        margin-top: 3rem;
+        margin-left: 10rem;
+    }  
 
-    .menu-item{
-        display: flex;
-    }
-    
     .introme{
-        margin-top: 5rem;
+        margin-top: 10rem;
         text-align: center;
         font-size: 40px;
         font-family: 'Roboto Slab', serif;
@@ -177,8 +243,14 @@ img {
     .heromg{
         grid-area: heromg;
         box-sizing: border-box;
-        margin-right: 60rem;
+        margin-right: 66rem;
         
+    }
+    .roundies{
+        grid-area: heromg;
+        box-sizing: border-box;
+        margin-top: 35.5rem;
+        margin-left: 50rem;
         
     }
     .textaboutpara{
