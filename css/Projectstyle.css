@@ -45,7 +45,10 @@ li > a{
     font-family: 'Roboto Slab', serif;
     height: 10rem;
 }
-
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 
     /* Top layout  */
 
@@ -54,6 +57,7 @@ li > a{
     perspective: 40em;
     display: grid;
     transform-style: preserve-3d;
+    cursor: pointer;
   }
   
   .cardR {
@@ -138,6 +142,7 @@ li > a{
     perspective: 40em;
     display: grid;
     transform-style: preserve-3d;
+    cursor: pointer;
   }
   
   .cardM {
@@ -222,6 +227,7 @@ li > a{
     perspective: 40em;
     display: grid;
     transform-style: preserve-3d;
+    cursor: pointer;
   }
   
   .cardB {
