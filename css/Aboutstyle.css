@@ -51,7 +51,7 @@ li > a{
     height: auto;
     font-family: 'Roboto Slab', serif;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "aboutmeTop aboutmeTop"
     "resume resume"
@@ -82,6 +82,7 @@ li > a{
    margin-right: 10rem;
    margin-left: 70rem;
    padding: 1rem;
+   cursor: pointer;
 }
 .aboutmeCenter{
    grid-area: aboutmeCenter;
@@ -103,6 +104,7 @@ li > a{
     margin-right: 10rem;
     margin-left: 70rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .aboutmeBottom{
@@ -124,6 +126,7 @@ li > a{
    margin-right: 10rem;
    margin-left: 70rem;
    padding: 1rem;
+   cursor: pointer;
 }
 #miro{
     grid-area: miro;
@@ -135,6 +138,7 @@ li > a{
     margin-right: 10rem;
     margin-left: 70rem;
     padding: 1rem;
+    cursor: pointer;
 }
 #invision{
     grid-area:invision;
@@ -146,6 +150,7 @@ li > a{
     margin-right: 10rem;
     margin-left: 70rem;
     padding: 1rem;
+    cursor: pointer;
 }
 #github{
   grid-area: github;
@@ -156,6 +161,7 @@ li > a{
   margin-right: 10rem;
   margin-left: 70rem;
   padding: 1rem;
+  cursor: pointer;
 }
 
 

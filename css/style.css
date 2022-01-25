@@ -42,111 +42,175 @@ li > a{
 
 /* Column CSS */
 
-.introme{
-    margin-top: 10rem;
-    margin-left: 30rem;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Roboto Slab', serif;
-    position: relative;
+.speech-bubble {
+	position: relative;
 	background: #00aabb;
 	border-radius: .4em;
+    margin-top: 5rem;
+    width: 30rem;
+    padding: 2rem;
+    margin-left: 40rem;
+    font-size: 1.5;
     color: white;
-
 }
 
-
-.introme:after {
-	content: '';
+.speech-bubble:after {
+content: '';
 	position: absolute;
-	left: 0;
-	top: 50%;
+	bottom: 0;
+	left: 30%;
 	width: 0;
 	height: 0;
-	border: 37px solid transparent;
-	border-right-color: #00aabb;
+	border: 58px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
 	border-left: 0;
-	border-top: 0;
-	margin-top: -18.5px;
-	margin-left: -37px;
+	margin-left: -29px;
+	margin-bottom: -58px;
 }
+
+
+
+
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+
+  }
+  .image1 {
+      box-sizing: border-box;
+    position: relative;
+    top: 4rem;
+    left: 30REM;
+  }
+  .image2 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin-left: 37rem;
+    margin-top: 28rem;
+    animation: spin 40s infinite linear;
+  }
+
+@keyframes spin {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
 
 .container {
     display: grid;
     height: auto;
-    margin: auto;
+    width: auto;
     justify-content: center;
     font-family: 'Roboto Slab', serif;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "container container"
-    "heromg heromg"
-    "roundies roundies"
     "textaboutpara textaboutpara"
-    "preproject preproject"
-    "app app"
     
     
 }
 
-.heromg{
-    grid-area: heromg;
-    box-sizing: border-box;
-    margin-right: 60rem;
-    position: absolute;
-    background-repeat: no-repeat;
-
-    
-}
-.roundies{
-    grid-area: heromg;
-    box-sizing: border-box;
-    margin-left: 19rem;
-    background-repeat: no-repeat;
-    z-index: 1;
-    margin-top: 10rem;
-}
-
-.spinMe {
-    animation: spin 5s infinite linear;
-  }
-@keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
 .textaboutpara{
     grid-area: textaboutpara;
     box-sizing: border-box;
     font-size: 2rem;
     text-align: center;
+    height: auto;
+    font-size: 2rem;
+    width: auto;
+    margin-top: 20rem;
+    margin-bottom: 5rem;
 }
 
 
 /* Middle CSS */
-.preproject{
-    grid-area: preproject;
+
+* {
     box-sizing: border-box;
-    margin-top: 4rem;
-    margin-left: 35rem;
-    margin-right: 35rem;
-}
-.app{
-    grid-area: app;
-    box-sizing: border-box;
-    border: solid black;
+    margin: 0;
+    padding: 0;
+    transition: 800ms;
+    text-decoration: none;
+    color: black;
+  }
+  
+  :root {
+    --grid-d: span 12;
+    --grid-h: span 12;
+  }
+
+  
+  /*  */
+  
+  main {
+    background-image: linear-gradient(to bottom right, #3db8ea, #a055ff);
+    box-shadow: 0 3px 24px rgba(0,0,0,.24);
+  /*   GRID   */
+      display: grid;
+      grid-template-columns: repeat(1px, 90px);
+    grid-gap: 2rem;
+  /*        */
+        padding: 1rem;
+  }
+  
+  
+  main > .projects {
+    grid-column: var(--grid-h);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    font-family: 'Roboto Slab', serif;
+    grid-gap: 1rem;
     text-align: center;
-    padding: 3rem;
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 3rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+   
     
+  
+  }
+  
+  .card {
+    box-shadow: 0 1px 3px rgba(0,0,0,.24);
+    border-radius: .25rem;
+    grid-column: var(--grid-d);
+    background-color: white;
+    min-height: 200px;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 1px 50px rgba(0,0,0,.16);
+    transform: scale(1.3);
+    z-index: 12;
+  }
+
+  #travBack{
+      background-image: url("../img/travBack.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+  }
+  #zenBack{
+    background-image: url("../img/ZenBack.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-
-
+#umbreBack{
+    background-image: url("../img/Umbre.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
 /* Footer CSS */
 .footer{
@@ -156,7 +220,8 @@ li > a{
     font-size: 20px;
     justify-content:space-between;
     font-family: 'Roboto Slab', serif;
-
+    margin-top: 3rem;
+    padding: 2rem;
 
 }
 #rightBC {
@@ -165,33 +230,32 @@ li > a{
     text-decoration: none;
     text-align: center;
     justify-content: center;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 #leftBC {
         margin-left: 30px;
 }
 .underline-hover {
-  display: inline-block;
-  position: relative;
-  color: rgb(0,0,255);
-}
-.underline-hover:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(0,0,255);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-.underline-hover:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
+    display: inline-block;
+    position: relative;
+    color: rgb(0,0,255);
+  }
+  .underline-hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0,0,255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .underline-hover:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 
 @media only screen and (max-width: 600px) {
@@ -233,24 +297,9 @@ li > a{
         grid-template-rows: 1fr;
         grid-template-areas: 
         "container container"
-        "heromg heromg"
         "textaboutpara textaboutpara"
         "preproject preproject"
         "app app"
-        
-    }
-    
-    .heromg{
-        grid-area: heromg;
-        box-sizing: border-box;
-        margin-right: 66rem;
-        
-    }
-    .roundies{
-        grid-area: heromg;
-        box-sizing: border-box;
-        margin-top: 35.5rem;
-        margin-left: 50rem;
         
     }
     .textaboutpara{
