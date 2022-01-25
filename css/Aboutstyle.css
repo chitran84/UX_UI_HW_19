@@ -49,6 +49,7 @@ li > a{
   .grid-container{
     display: grid;
     height: auto;
+    margin: auto;
     font-family: 'Roboto Slab', serif;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -69,42 +70,109 @@ li > a{
       box-sizing: border-box;
       font-size: 1.5rem;
       text-align: justify;
-      margin-right: 25rem;
+      margin-right: 10rem;
       margin-left: 5rem;
-      padding: 1rem;
+      padding: 5rem;
+      box-shadow: 0 10px 20px -8px rgba(218, 122, 13, 0.7);
   }
-.resume{
-   grid-area: resume;
-   box-sizing: border-box;
-   border: solid black;
-   font-size: 1.5rem;
-   text-align: center;
-   margin-right: 10rem;
-   margin-left: 70rem;
-   padding: 1rem;
-   cursor: pointer;
+
+.resume {
+  grid-area: resume;
+  color: white;
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 80rem;
 }
+
+.resume{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.resume:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.resume:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.resume:hover:after {
+  opacity: 1;
+  right: 10px;
+
+}
+
 .aboutmeCenter{
    grid-area: aboutmeCenter;
    box-sizing: border-box;
    font-size: 1.5rem;
    text-align: justify;
-   margin-right: 25rem;
+   margin-right: 10rem;
    margin-left: 5rem;
-   padding: 1rem;
+   padding: 5rem;
+   box-shadow: 0 10px 20px -8px rgba(32, 196, 46, 0.7);
+}
+
+.slides {
+  grid-area: slides;
+  border-radius: 4px;
+  background-color: #6C30FB;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 80rem;
 }
 
 .slides{
-    grid-area: slides;
-    box-sizing: border-box;
-    border: solid black;
-    text-align: right;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-right: 10rem;
-    margin-left: 70rem;
-    padding: 1rem;
-    cursor: pointer;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.slides:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.slides:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.slides:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 .aboutmeBottom{
@@ -112,45 +180,141 @@ li > a{
   box-sizing: border-box;
   font-size: 1.5rem;
   text-align: justify;
-  margin-right: 25rem;
+  margin-right: 10rem;
   margin-left: 5rem;
-  padding: 1rem;
+  padding: 5rem;
+  box-shadow: 0 10px 20px -8px rgba(250, 5, 5, 0.7);
 }
+
 #figma {
-   grid-area:figma;
-   box-sizing: border-box;
-   border: solid black;
-   text-align: right;
-   font-size: 1.5rem;
-   text-align: center;
-   margin-right: 10rem;
-   margin-left: 70rem;
-   padding: 1rem;
-   cursor: pointer;
+  grid-area: figma;
+  border-radius: 4px;
+  background-color: #FD9F91;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 80rem;
 }
+
+#figma{
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#figma:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#figma:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+#figma:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+#miro {
+  grid-area: miro;
+  border-radius: 4px;
+  background-color: #FFFF00;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 80rem;
+}
+
 #miro{
-    grid-area: miro;
-    box-sizing: border-box;
-    border: solid black;
-    text-align: right;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-right: 10rem;
-    margin-left: 70rem;
-    padding: 1rem;
-    cursor: pointer;
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+#miro:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#miro:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+#miro:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
+#invision {
+  grid-area: invision;
+  border-radius: 4px;
+  background-color: #e75480;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 80rem;
+}
+
 #invision{
-    grid-area:invision;
-    box-sizing: border-box;
-    border: solid black;
-    text-align: right;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-right: 10rem;
-    margin-left: 70rem;
-    padding: 1rem;
-    cursor: pointer;
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#invision:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#invision:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+#invision:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 #github{
   grid-area: github;
@@ -163,7 +327,48 @@ li > a{
   padding: 1rem;
   cursor: pointer;
 }
+#github {
+  grid-area: github;
+  border-radius: 4px;
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 80rem;
+}
 
+#github{
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#github:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#github:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+#github:hover:after {
+  opacity: 1;
+  right: 10px;
+}
 
 
 
