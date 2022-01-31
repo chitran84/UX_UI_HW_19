@@ -8,10 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    
 
 </head>
 <body>
+<!-- Add loader-wrapper just below the body tag -->
+<div class="loader-wrapper">
+  <div class="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+
+
+
+
 <!-- Nav HTML -->
 <div id="topSec">
     <ul class="navBar">
@@ -29,32 +42,30 @@
 
 <section>    
    
-    <div class="parent">
-        <p class="speech-bubble"> "Everything is designed. Few things are designed well."
-            <br>
-            — Brian Reed </p>
-    <img class="image1" src="img/IMG_CG.png" height="400">
-    <img class="image2" class="spinME" src="./img/Carousel round.png" height="300">
+    <div class="imageT">
+    <img class="imagefluid" src="img/Component 1.png" height="100%" width="100%">
     </div>
   </div>       
 </section>
 
     <div class="container">
+            
             <div class="textaboutpara">
-            <p>Heya! I am Chitran Graham. I am a recent graduate of the UX/UI Design course from Monash University. I have a particular interest in Front End Developing. I'm based in the most liveable city in the world; Melbourne, Victoria. Currently I'm working as an IT Support with additional UX/UI duties for a manufacturing company in the north of Melbourne</p>
+              <h1 id="fluidt">Heya!</h1>
+            <p>I am Chitran Graham. I am a recent graduate of the UX/UI Design course from Monash University. I have a particular interest in Front End Developing. I'm based in the most liveable city in the world; Melbourne, Victoria. Currently I'm working as an IT Support with additional UX/UI duties for a manufacturing company in the north of Melbourne</p>
             <p>I am passionate about making everyday task as convenient as possible for my users. I aim to deliver the best outcome for my internal and external clients with high quality technical support and visual design. Enjoy a tour of my projects and get in touch so we can collaborate.</p>
             </div>
     </div> 
 
-            <section>  
+  
                 <main>    
                   <div class="projects">
-                    <div class="card" id="travBack" style="text-decoration:none"><a class="active" href="./Project.html">Travel Bubble</a></div> 
-                    <div class="card" id="zenBack"  style="text-decoration:none"><a class="active" href="./Project.html">Zentient</a></div> 
-                    <div class="card" id="umbreBack" style="text-decoration:none"><a class="active" href="./Project.html">The Big Umbrella</a></div> 
+                    <div class="card" id="travBack" ><a class="active" style="text-decoration:none" href="./Project.html">Travel Bubble</a></div> 
+                    <div class="card" id="zenBack"  ><a class="active" style="text-decoration:none" href="./Project.html">Zentient</a></div> 
+                    <div class="card" id="umbreBack"><a class="active" style="text-decoration:none" href="./Project.html">The Big Umbrella</a></div> 
                   </div>
                 </main>
-              </section>
+             
    
 
 <!-- Footer HTML -->
@@ -68,13 +79,9 @@
         
     </div>
 </body>
+
+
+
+
 </html>
 <!-- 
-<div class="preloader">
-    <img src="images/spinner.png">
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
-  </body>
-  -->

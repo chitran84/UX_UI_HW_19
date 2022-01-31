@@ -1,43 +1,60 @@
 #topSec{
-    height: 72px;
-    position: relative;
+  height: 72px;
+  position: relative;
 }
 .navBar{
-    display: block;
-    text-align:center;
-    box-sizing: border-box;
-    color:black;
-    margin-top: 2rem;
-    list-style-type: none;
+  display: block;
+  text-align:center;
+  box-sizing: border-box;
+  color:black;
+  margin-top: 2rem;
+  list-style-type: none;
 }
 li > a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto Slab', serif;
-    margin-right: 5rem;
-    font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  margin-right: 5rem;
+  font-size: 1.3rem;
 }
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: rgb(0,0,255);
-  }
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 3.7rem;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0,0,255);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  display: inline-block;
+  position: relative;
+  color: rgb(0,0,255);
+}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(0,0,255);
+}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
   
   .project{
     text-align: center;
@@ -310,48 +327,52 @@ a {
 
   /* Footer CSS */
 .footer{
-    box-sizing: border-box;
-    display: flex;
-    background-color: rgba(87, 114, 97, 0.1);
-    font-size: 20px;
-    justify-content:space-between;
-    font-family: 'Roboto Slab', serif;
-
+  box-sizing: border-box;
+  display: flex;
+  font-size: 20px;
+  justify-content:space-between;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 3rem;
+  padding: 2rem;
+  background:
+    linear-gradient(to bottom right, #000000 1%, transparent),
+    radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
+    linear-gradient(to bottom right, #ffffff, #ffffff);
 
 }
 #rightBC {
-    color: black;
-    margin-right: 30px;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    box-sizing: border-box;
-    
+  color: black;
+  margin-right: 30px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;    
 }
 #leftBC {
-        margin-left: 30px;
+color: white;
+      margin-left: 30px;
 }
 .underline-hover {
-    display: inline-block;
-    position: relative;
-    color: rgb(0,0,255);
-  }
-  .underline-hover:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0,0,255);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .underline-hover:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  display: inline-block;
+  position: relative;
+  color: rgb(0,0,255);
+}
+.underline-hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline-hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
     @media only screen and (max-width: 600px) {
         /* STYLES HERE for DEVICES with physical max-screen width of 480px */
         #topSec{
